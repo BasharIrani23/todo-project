@@ -30,6 +30,7 @@ header {
     margin: auto;
     background-color: #f2f2f2;
     border-collapse: collapse;
+    
   }
   
   #task-table th, #task-table td {
@@ -37,17 +38,22 @@ header {
     border: 1px solid black;
     text-align: center;
     color: black;
+    padding-bottom: 50px;
   }
   
   #task-table th {
     background-color: #be3434c1;
     color: white;
+    
   }
   #my-footer {
     background-color: #be3434c1;
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 30px;
+  
+    
+
   }
 
   #info {
