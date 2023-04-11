@@ -10,7 +10,7 @@ header {
   }
   .header-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
   }
@@ -48,11 +48,13 @@ header {
   }
   #my-footer {
     background-color: #be3434c1;
+    width: 100%;
     color: white;
     text-align: center;
     padding: 30px;
-  
-    
+    position: absolute;
+    bottom: 0;
+   
 
   }
 
@@ -62,7 +64,10 @@ header {
     justify-content: center;
     
   }
-  
+  #logo {
+
+    margin-right:100px;
+  }
   #photo img {
     margin-right: 20px;
     border-radius: 50%
