@@ -7,9 +7,6 @@ alert("Enter your real age");}
 
 var skipWelcome = confirm("Do you want to skip the welcoming message?");
 
-
-
-
 if (skipWelcome) {
   console.log("Welcome message has been skipped");
 } else {
