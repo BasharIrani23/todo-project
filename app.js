@@ -18,13 +18,27 @@ if (skipWelcome) {
       }
         
       alert (welcomeMessage)
-      }
+      } 
       
+      
+let answers=[];
 
+function askQuestion(question) {
+  let input=prompt(question) 
 
+if (input==="" || input === null)
+{
+  alert("Please enter a valid answer");
+}
+else if(input.toLowerCase()==="yes" || input.toLocaleLowerCase() === "no") {
+  answers.push(input);
+  return input;
+}}
 
+askQuestion("Do you work?");
+askQuestion("Do you study?");
+askQuestion("Do you like LTUC?");
 
-  
- 
-  
-  
+for (let i = 0; i < answers.length; i++) {
+  console.log(answers[i]);
+}
