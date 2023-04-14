@@ -25,24 +25,28 @@ if (skipWelcome) {
       } 
       
       
-let answers=[];
+      let answers = [];
 
-function askQuestion(question) {
-  let input=prompt(question) 
-
-if (input==="" || input === null)
-{
-  alert("Please enter a valid answer");
-}
-else if(input.toLowerCase()==="yes" || input.toLocaleLowerCase() === "no") {
-  answers.push(input);
-  return input;
-}}
-
-askQuestion("Do you work?");
-askQuestion("Do you study?");
-askQuestion("Do you like LTUC?");
-
-for (let i = 0; i < answers.length; i++) {
-  console.log(answers[i]);
-}
+      function promptQuestion(question) {
+        return prompt(question);
+      }
+      
+      function validateAnswer(input) {
+        if (input === "" || input === null) {
+          answers.push("invalid");
+        } else if (input.toLowerCase() === "yes" || input.toLowerCase() === "no") {
+          answers.push(input);
+        }
+      }
+      
+      function printAnswers() {
+        for (let i = 0; i < answers.length; i++) {
+          console.log(answers[i]);
+        }
+      }
+      
+      validateAnswer(promptQuestion("Do you work?"));
+      validateAnswer(promptQuestion("Do you study?"));
+      validateAnswer(promptQuestion("Do you like LTUC?"));
+      
+      printAnswers();
