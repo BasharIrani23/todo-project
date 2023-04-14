@@ -16,7 +16,11 @@ if (skipWelcome) {
       } else if (gender === "female") {
         welcomeMessage = "Welcome, Ms. " + name + "!";
       }
-        
+        else {
+
+          welcomeMessage="Welcome " + name + "!";
+ 
+        }
       alert (welcomeMessage)
       }
       
